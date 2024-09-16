@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+.container{
+    background-color: red;
+    height: 100vh;
+    position: absolute;
+}
+.top{
+    padding: 25px;
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.middle{
+    height: 550px;
+    padding: 10px;
+     position: absolute;
+     top: 200px;
+     width: 25%;
+     left: 5%;
+     z-index:2;
+
+}
+
+.middle2{
+    height: 550px;
+    left: 30%;
+    top:200px;
+    width: 70%;
+    position: fixed;
+    z-index:1;
+}
+
+.bottom{
+    height: 200%;
+    padding: 10px;
+    position: absolute;
+    top:85%;
+    width:50%;
+    display: flex;
+  flex-direction: column;
+}
+
+.text{
+    color: White;
+    font-size: 80px
+}
+
+
+.text:hover{
+    transform: translateX(10px);
+   transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.7;
+    font-size: 100px;
+}
+
+.text1{
+    color: White;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.text1:hover{
+    transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function: ease;
+     transform: translateX(20px);
+     transform: translateY(-10px);
+    transition-delay: 1;
+    font-size:80px;
+}
+
+.text2{
+    color: White;
+    font-size: 30px;
+    left:2.5%;
+    position:fixed;
+    top: 90%;
+}
+
+.text3{
+    color: White;
+    font-size: 60px;
+    left:2.5%;
+    position:fixed;
+    top: 84%;
+}
+
+.flxMain{
+    background-color: black;
+
+}
+
+.hamburger{
+
+}
+
+.circle{
+    position: fixed;
+    top:25%;
+    left:35%;
+    width:45vh;
+    height:45vh;
+    border-radius:50%;
+    background: linear-gradient(white,gray);
+    animation: animate 40s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+        background: linear-gradient(gray,black);
+        opacity: 0;
+
+    }
+}
+
+.circle:after{
+    content:'';
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    bottom: 35px;
+    right: 35px;
+    border-radius:50%;
+    background-color: black;
+
+}
+
+.circle span{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white,gray);
+    border-radius: 50%;
+}
+
+.circle span:nth-child(1){
+    filter: blur(15px);
+}
+
+.circle span:nth-child(2){
+    filter: blur(30px);
+}
+
+.circle span:nth-child(3){
+    filter: blur(60px);
+}
+
+.circle span:nth-child(4){
+    filter: blur(125px);
+}
+
+.circle2{
+    position: fixed;
+    top:45%;
+    left:52%;
+    width:400px;
+    height:400px;
+    background: black;
+    border-width: 10px;
+    border-radius:50%;
+    animation: animate2 10s linear infinite;
+}
+
+.circle2:after{
+    content:'';
+    position: fixed;
+    top: 65px;
+    right: 65px;
+    bottom: 65px;
+    left: 65px;
+}
+
+.circle2 span{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black,black);
+    border: solid black;
+    border-radius: 50%;
+}
+
+.circle2 span:nth-child(1){
+    filter: blur(55px);
+}
+
+.circle2 span:nth-child(2){
+    filter: blur(90px);
+}
+
+.circle2 span:nth-child(3){
+    filter: blur(160px);
+}
+
+.circle2 span:nth-child(4){
+    filter: blur(255px);
+}
+
+@keyframes animate2{
+    from{
+        transform: rotate(360deg);
+
+    }
+
+    to{
+        transform: rotate(0deg);
+        border-radius: 50%;
+    }
+}
+
+.about{
+    top:120%;
+    left:5%;
+    width: 90%;
+    background-color: red;
+}
+
